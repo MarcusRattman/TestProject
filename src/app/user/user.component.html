@@ -1,0 +1,24 @@
+<div *ngIf="loaded" class="userVerbose">
+    <img class="pfp" src="{{user.avatar}}" alt="{{user.first_name}}'s avatar">
+    <h2>{{user.first_name}} {{user.last_name}}</h2>
+
+    <form autocomplete="off">
+        <label for="name">Name</label>
+
+        <div class="inputGroup">
+            <input class="textInput" [(ngModel)]="formName" name="name" type="text" placeholder="{{user.first_name}} {{user.last_name}}">
+            <input class="but" (click)="submitName($event)" type="submit" value="✔️">
+        </div>
+    </form>
+
+    <form autocomplete="off">
+        <label for="email">Email</label>
+
+        <div class="inputGroup">
+            <input class="textInput" [(ngModel)]="formEmail" name="email" type="email" placeholder="{{user.email}}">
+            <input class="but" (click)="submitEmail($event)" type="submit" value="✔️">
+        </div>
+    </form>
+
+    <a href="mailto:{{user.email}}">{{user.email}}</a>
+</div>

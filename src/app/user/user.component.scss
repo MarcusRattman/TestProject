@@ -1,0 +1,67 @@
+.userVerbose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 0.15rem solid #5181b8;
+  border-radius: 1rem;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.pfp {
+    border-radius: 50%;
+    border: 0.5rem solid #5181b8;
+}
+
+label {
+    font-weight: 400;
+    user-select: none;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.textInput {
+    background: #fafbfc;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 0.1rem solid #5181b8;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+
+    transition: all 0.25s ease;
+}
+
+.textInput:focus {
+    border-bottom: 0.1rem solid #26dab1;
+}
+
+.but {
+    background: #ddd;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.but:hover {
+    background: #26dab1;
+}

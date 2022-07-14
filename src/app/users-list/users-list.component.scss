@@ -1,0 +1,43 @@
+.User {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    user-select: none;
+
+    transition: all 0.25s ease;
+
+    .Delete {
+        border-radius: 50%;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.User:hover {
+    background: #f5f6f7e5;
+    cursor: pointer;
+}
+
+.Avatar {
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    border: 0.25rem solid #5181b8;
+}
+
+.Name {
+    font-size: 1.25rem;
+    font-weight: 500;
+}

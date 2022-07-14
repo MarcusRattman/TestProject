@@ -1,0 +1,11 @@
+.Columns {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+}
+.Divider {
+    background: #2a5885;
+    height: 100%;
+    width: 2px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

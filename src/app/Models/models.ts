@@ -1,0 +1,43 @@
+export interface Users {
+    page:        number;
+    per_page:    number;
+    total:       number;
+    total_pages: number;
+    data:        User[];
+    support:     Support;
+}
+
+export interface User {
+    id:         number;
+    email:      string;
+    first_name: string;
+    last_name:  string;
+    avatar:     string;
+}
+
+export interface UserResponse {
+    data:    User;
+    support: Support;
+}
+
+export interface Resources {
+    page:        number;
+    per_page:    number;
+    total:       number;
+    total_pages: number;
+    data:        Resource[];
+    support:     Support;
+}
+
+export interface Resource {
+    id:            number;
+    name:          string;
+    year:          number;
+    color:         string;
+    pantone_value: string;
+}
+
+export interface Support {
+    url:  string;
+    text: string;
+}

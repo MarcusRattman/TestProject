@@ -1,0 +1,10 @@
+<div class="Users" *ngFor="let user of Users">
+    <div class="User">
+        <a routerLink="/user/{{user.id}}"  class="Info">
+            <img class="Avatar" src={{user.avatar}} alt="{{user.first_name}}'s avatar" />
+            <span class="Name">{{ user.first_name }} {{ user.last_name }}</span>
+        </a>
+    
+        <button class="Delete" (click)="deleteUser(user.id)">❌</button>
+    </div>
+</div>
