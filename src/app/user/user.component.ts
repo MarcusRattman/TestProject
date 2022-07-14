@@ -34,14 +34,6 @@ export class UserComponent implements OnInit {
     });
   }
 
-  onNameChange(name: KeyboardEvent) {
-    this.formName = (name.target as HTMLInputElement).value;
-  }
-
-  onEmailChange(email: KeyboardEvent) {
-    this.formEmail = (email.target as HTMLInputElement).value;
-  }
-
   submitName(ev: any) {
     ev.preventDefault();
     let firstlastname = this.formName.split(' ');
