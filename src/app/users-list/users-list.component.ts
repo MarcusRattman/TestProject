@@ -13,10 +13,10 @@ export class UsersListComponent implements OnInit {
   constructor(private fs: FetcherService) { }
 
   ngOnInit(): void {
-    let subscribtion = this.fs.GetUserList().subscribe(
+    let subscription = this.fs.GetUserList().subscribe(
       data => {
         this.Users = data.data;
-        subscribtion.unsubscribe();
+        subscription.unsubscribe();
       }
     );
   }
